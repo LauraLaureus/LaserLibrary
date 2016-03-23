@@ -19,9 +19,10 @@ namespace
             long x = static_cast<long>(l * cos(radian));
             long y = static_cast<long>(l * sin(radian));
 
-            cout << "(" << x << ", " << y << ")" << endl;
+            //cout << "(" << x << ", " << y << ")" << endl;
         }
 
+        cout << data_n;
         cout << endl;
     }
 }

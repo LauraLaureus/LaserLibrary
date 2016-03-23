@@ -10,6 +10,7 @@
 		277AB94F1CA30B12008C01D6 /* Connection_information.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 277AB94C1CA30B12008C01D6 /* Connection_information.cpp */; };
 		277AB9501CA30B12008C01D6 /* distance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 277AB94E1CA30B12008C01D6 /* distance.cpp */; };
 		277AB9591CA318AE008C01D6 /* lurg_cpp.so in Frameworks */ = {isa = PBXBuildFile; fileRef = 277AB9581CA318AE008C01D6 /* lurg_cpp.so */; };
+		277AB95C1CA3214A008C01D6 /* LaserManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 277AB95A1CA3214A008C01D6 /* LaserManager.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,8 @@
 		277AB9541CA30B45008C01D6 /* math_utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = math_utilities.h; path = "../../lib/urg_library-1.2.0/include/cpp/math_utilities.h"; sourceTree = "<group>"; };
 		277AB9551CA30B45008C01D6 /* ticks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ticks.h; path = "../../lib/urg_library-1.2.0/include/cpp/ticks.h"; sourceTree = "<group>"; };
 		277AB9581CA318AE008C01D6 /* lurg_cpp.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = lurg_cpp.so; path = "../lib/urg_library-1.2.0/src/lurg_cpp.so"; sourceTree = "<group>"; };
+		277AB95A1CA3214A008C01D6 /* LaserManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LaserManager.cpp; sourceTree = "<group>"; };
+		277AB95B1CA3214A008C01D6 /* LaserManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LaserManager.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,8 @@
 				277AB9541CA30B45008C01D6 /* math_utilities.h */,
 				277AB9551CA30B45008C01D6 /* ticks.h */,
 				277AB9511CA30B2A008C01D6 /* Urg_driver.h */,
+				277AB95A1CA3214A008C01D6 /* LaserManager.cpp */,
+				277AB95B1CA3214A008C01D6 /* LaserManager.hpp */,
 			);
 			path = LaserLibrary;
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 			files = (
 				277AB9501CA30B12008C01D6 /* distance.cpp in Sources */,
 				277AB94F1CA30B12008C01D6 /* Connection_information.cpp in Sources */,
+				277AB95C1CA3214A008C01D6 /* LaserManager.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
