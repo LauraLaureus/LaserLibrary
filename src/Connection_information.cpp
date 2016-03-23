@@ -33,7 +33,8 @@ struct Connection_information::pImpl
 #elif defined(QRK_LINUX_OS)
         device_or_ip_name_ = "/dev/ttyACM0";
 #else
-        device_or_ip_name_ = "/dev/tty.usbmodemfa131";
+        //device_or_ip_name_ = "/dev/tty.usbmodemfa131";
+        device_or_ip_name_ = "/dev/tty.usbmodem1421";
 #endif
         }
         baudrate_or_port_number_ = 115200;
@@ -46,8 +47,8 @@ struct Connection_information::pImpl
         if (ip_address != NULL) {
             device_or_ip_name_ = ip_address;
         } else {
-            //device_or_ip_name_ = "localhost";
-            device_or_ip_name_ = "192.168.0.10";
+            device_or_ip_name_ = "localhost";
+            //device_or_ip_name_ = "192.168.0.10";
         }
         baudrate_or_port_number_ = 10940;
     }

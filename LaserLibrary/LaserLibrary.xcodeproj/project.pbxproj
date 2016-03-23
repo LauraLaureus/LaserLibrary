@@ -1,0 +1,269 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		277AB94F1CA30B12008C01D6 /* Connection_information.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 277AB94C1CA30B12008C01D6 /* Connection_information.cpp */; };
+		277AB9501CA30B12008C01D6 /* distance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 277AB94E1CA30B12008C01D6 /* distance.cpp */; };
+		277AB9591CA318AE008C01D6 /* lurg_cpp.so in Frameworks */ = {isa = PBXBuildFile; fileRef = 277AB9581CA318AE008C01D6 /* lurg_cpp.so */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		277AB93C1CA30A3E008C01D6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		277AB93E1CA30A3E008C01D6 /* LaserLibrary */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LaserLibrary; sourceTree = BUILT_PRODUCTS_DIR; };
+		277AB94C1CA30B12008C01D6 /* Connection_information.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Connection_information.cpp; path = ../../src/Connection_information.cpp; sourceTree = "<group>"; };
+		277AB94D1CA30B12008C01D6 /* Connection_information.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Connection_information.h; path = ../../src/Connection_information.h; sourceTree = "<group>"; };
+		277AB94E1CA30B12008C01D6 /* distance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = distance.cpp; path = ../../src/distance.cpp; sourceTree = "<group>"; };
+		277AB9511CA30B2A008C01D6 /* Urg_driver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Urg_driver.h; path = "../../lib/urg_library-1.2.0/include/cpp/Urg_driver.h"; sourceTree = "<group>"; };
+		277AB9521CA30B45008C01D6 /* detect_os.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = detect_os.h; path = "../../lib/urg_library-1.2.0/include/cpp/detect_os.h"; sourceTree = "<group>"; };
+		277AB9531CA30B45008C01D6 /* Lidar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Lidar.h; path = "../../lib/urg_library-1.2.0/include/cpp/Lidar.h"; sourceTree = "<group>"; };
+		277AB9541CA30B45008C01D6 /* math_utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = math_utilities.h; path = "../../lib/urg_library-1.2.0/include/cpp/math_utilities.h"; sourceTree = "<group>"; };
+		277AB9551CA30B45008C01D6 /* ticks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ticks.h; path = "../../lib/urg_library-1.2.0/include/cpp/ticks.h"; sourceTree = "<group>"; };
+		277AB9581CA318AE008C01D6 /* lurg_cpp.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = lurg_cpp.so; path = "../lib/urg_library-1.2.0/src/lurg_cpp.so"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		277AB93B1CA30A3E008C01D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				277AB9591CA318AE008C01D6 /* lurg_cpp.so in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		277AB9351CA30A3E008C01D6 = {
+			isa = PBXGroup;
+			children = (
+				277AB9581CA318AE008C01D6 /* lurg_cpp.so */,
+				277AB9401CA30A3E008C01D6 /* LaserLibrary */,
+				277AB93F1CA30A3E008C01D6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		277AB93F1CA30A3E008C01D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				277AB93E1CA30A3E008C01D6 /* LaserLibrary */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		277AB9401CA30A3E008C01D6 /* LaserLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				277AB94C1CA30B12008C01D6 /* Connection_information.cpp */,
+				277AB94D1CA30B12008C01D6 /* Connection_information.h */,
+				277AB94E1CA30B12008C01D6 /* distance.cpp */,
+				277AB9521CA30B45008C01D6 /* detect_os.h */,
+				277AB9531CA30B45008C01D6 /* Lidar.h */,
+				277AB9541CA30B45008C01D6 /* math_utilities.h */,
+				277AB9551CA30B45008C01D6 /* ticks.h */,
+				277AB9511CA30B2A008C01D6 /* Urg_driver.h */,
+			);
+			path = LaserLibrary;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		277AB93D1CA30A3E008C01D6 /* LaserLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 277AB9451CA30A3E008C01D6 /* Build configuration list for PBXNativeTarget "LaserLibrary" */;
+			buildPhases = (
+				277AB93A1CA30A3E008C01D6 /* Sources */,
+				277AB93B1CA30A3E008C01D6 /* Frameworks */,
+				277AB93C1CA30A3E008C01D6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LaserLibrary;
+			productName = LaserLibrary;
+			productReference = 277AB93E1CA30A3E008C01D6 /* LaserLibrary */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		277AB9361CA30A3E008C01D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Laura del Pino Díaz";
+				TargetAttributes = {
+					277AB93D1CA30A3E008C01D6 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 277AB9391CA30A3E008C01D6 /* Build configuration list for PBXProject "LaserLibrary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 277AB9351CA30A3E008C01D6;
+			productRefGroup = 277AB93F1CA30A3E008C01D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				277AB93D1CA30A3E008C01D6 /* LaserLibrary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		277AB93A1CA30A3E008C01D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				277AB9501CA30B12008C01D6 /* distance.cpp in Sources */,
+				277AB94F1CA30B12008C01D6 /* Connection_information.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		277AB9431CA30A3E008C01D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		277AB9441CA30A3E008C01D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		277AB9461CA30A3E008C01D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		277AB9471CA30A3E008C01D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		277AB9391CA30A3E008C01D6 /* Build configuration list for PBXProject "LaserLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				277AB9431CA30A3E008C01D6 /* Debug */,
+				277AB9441CA30A3E008C01D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		277AB9451CA30A3E008C01D6 /* Build configuration list for PBXNativeTarget "LaserLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				277AB9461CA30A3E008C01D6 /* Debug */,
+				277AB9471CA30A3E008C01D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 277AB9361CA30A3E008C01D6 /* Project object */;
+}
