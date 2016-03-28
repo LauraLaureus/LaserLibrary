@@ -10,30 +10,32 @@
 #define LaserManager_hpp
 
 #include <stdio.h>
-#include <pthread.h>
+class PlanePoint{
+
+public:
+    long x;
+    long y;
+    PlanePoint(long x , long y){
+        this->x = x;
+        this->y = y;
+    }
+    
+};
+
 
 class LaserManager{
 
 private:
-    pthread_t thread_id;
-    pthread_cond_t thread_cond_variable;
-    pthread_mutex_t thread_cond_variable_mutex;
     int vertex [4];
     void* callback (int,int); //function to call when there is something.
-    void* threadMain(void* args); //main function of the thread.
 
 public:
     /* Constructor initializes Connection Information and URG_Driver*/
     LaserManager();
     /*Open conection and starts thread (thread will be stopped till run call is done)*/
-    void open();
-    /* Resumes thread execution */
-    void run();
-    /*Sets vertex of WorksSpace*/
     void setWorkSpaceVertex(int rightDown,int rightUp,int leftUp,int leftDown);
-    /*Sets callback function which will be called when there is something on Workspace*/
-    void setOnEvent(void* callbackFunction (int x, int y));
-    
+    /*Function to be called by Timer event*/
+    PlanePoint readLaser();
     
 };
 
