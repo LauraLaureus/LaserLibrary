@@ -1,9 +1,9 @@
-#include "Urg_driver.h"
+/*#include "Urg_driver.h"
 #include "Connection_information.h"
 #include "math_utilities.h"
-#include <iostream>
+#include <iostream>*/
 
-using namespace qrk;
+/*using namespace qrk;
 using namespace std;
 
 namespace
@@ -26,12 +26,14 @@ namespace
         cout << endl;
     }
 }
+*/
 
+#include "LaserManager.hpp"
 
 int main(int argc, char *argv[])
 {
     // Conectar al sensor
-    Connection_information information(argc, argv);
+    /*Connection_information information(argc, argv);
     Urg_driver urg;
 
     if (!urg.open(information.device_or_ip_name(),
@@ -60,7 +62,11 @@ int main(int argc, char *argv[])
         }
 
         print_data(urg, data, time_stamp);
-    }
+    }*/
+   
+    LaserManager::open();
+    LaserManager::readLaser();
+    
 
 #if defined(URG_MSC)
     getchar();

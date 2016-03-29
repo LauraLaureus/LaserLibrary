@@ -34,7 +34,7 @@ struct Connection_information::pImpl
         device_or_ip_name_ = "/dev/ttyACM0";
 #else
         //device_or_ip_name_ = "/dev/tty.usbmodemfa131";
-        device_or_ip_name_ = "/dev/tty.usbmodem1421";
+        device_or_ip_name_ = "/dev/tty.usbmodem1411";
 #endif
         }
         baudrate_or_port_number_ = 115200;

@@ -9,7 +9,11 @@
 #ifndef LaserManager_hpp
 #define LaserManager_hpp
 
-#include <stdio.h>
+#include <iostream>
+#include "Urg_driver.h"
+#include "Connection_information.h"
+#include "math_utilities.h"
+
 class PlanePoint{
 
 public:
@@ -24,18 +28,18 @@ public:
 
 
 class LaserManager{
-
-private:
-    int vertex [4];
-    void* callback (int,int); //function to call when there is something.
-
+    static qrk::Connection_information information;
+    static int vertex [4];
+    static qrk::Urg_driver urg;
+    
 public:
-    /* Constructor initializes Connection Information and URG_Driver*/
-    LaserManager();
-    /*Open conection and starts thread (thread will be stopped till run call is done)*/
-    void setWorkSpaceVertex(int rightDown,int rightUp,int leftUp,int leftDown);
-    /*Function to be called by Timer event*/
-    PlanePoint readLaser();
+    
+    
+    LaserManager(int argc, char** argv);
+    
+    static void open();
+    static void setWorkSpaceVertex(int rightDown,int rightUp,int leftUp,int leftDown);
+    static PlanePoint readLaser();
     
 };
 
