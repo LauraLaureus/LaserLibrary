@@ -23,7 +23,7 @@ void LaserManager::open(){
                            LaserManager::information.connection_type()
                                ))
        cout << "Not opened" << endl;
-     urg.set_scanning_parameter(urg.deg2step(-90), urg.deg2step(+90), 0);
+    urg.set_scanning_parameter(urg.deg2step(-90), urg.deg2step(+90), 0);
     urg.start_measurement(qrk::Urg_driver::Distance, qrk::Urg_driver::Infinity_times, 0);
     
 }

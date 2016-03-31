@@ -29,6 +29,11 @@ namespace
 */
 
 #include "LaserManager.hpp"
+#include <GLUT/GLUT.h>
+#include <OpenGL/OpenGL.h>
+
+void Display();
+void Init();
 
 int main(int argc, char *argv[])
 {
@@ -64,8 +69,21 @@ int main(int argc, char *argv[])
         print_data(urg, data, time_stamp);
     }*/
    
+    glutInit(&argc, argv);
+    glutInitWindowPosition(100, 100);
+    glutInitWindowSize(500, 500);
+    glutInitDisplayMode(GLUT_RGBA | GLUT_SINGLE);
+    
+    glutCreateWindow("OpenGL Practica ");
+    Init();
+    glutDisplayFunc(Display); // registra la funcion de rendering
     LaserManager::open();
-    LaserManager::readLaser();
+    
+    while(1){
+        glutCheckLoop(); //for Mac distribution.
+        LaserManager::readLaser();
+    }
+   
     
 
 #if defined(URG_MSC)

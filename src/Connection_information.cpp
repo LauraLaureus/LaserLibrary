@@ -34,19 +34,7 @@ struct Connection_information::pImpl
 #elif defined(QRK_LINUX_OS)
         device_or_ip_name_ = "/dev/ttyACM0";
 #else
-            DirectoryLister lister = *new DirectoryLister("/dev/");
-            std::vector<char*> files = lister.getFileNames();
-            for (int i = 0; i < files.size(); i++) {
-                if(strstr("usbmodem",files[i]) != NULL){
-                    char device[80];
-                    memset(device,0,80);
-                    strcat(device, "/dev/");
-                    device_or_ip_name_ = strcat(device,files[i]);
-                    printf("HELLO ! %s\n",device_or_ip_name_.c_str());
-                    break;
-                }
-            }
-        //device_or_ip_name_ = "/dev/tty.usbmodem1411";
+        device_or_ip_name_ = "/dev/tty.usbmodem1411";
 #endif
         }
         baudrate_or_port_number_ = 115200;

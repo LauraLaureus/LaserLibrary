@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		271DC6531CAC1AC1009624C6 /* DirectoryLister.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 271DC6511CAC1AC1009624C6 /* DirectoryLister.cpp */; };
 		277AB94F1CA30B12008C01D6 /* Connection_information.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 277AB94C1CA30B12008C01D6 /* Connection_information.cpp */; };
 		277AB9501CA30B12008C01D6 /* distance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 277AB94E1CA30B12008C01D6 /* distance.cpp */; };
 		277AB9591CA318AE008C01D6 /* lurg_cpp.so in Frameworks */ = {isa = PBXBuildFile; fileRef = 277AB9581CA318AE008C01D6 /* lurg_cpp.so */; };
@@ -27,8 +26,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		271DC6511CAC1AC1009624C6 /* DirectoryLister.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DirectoryLister.cpp; sourceTree = "<group>"; };
-		271DC6521CAC1AC1009624C6 /* DirectoryLister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectoryLister.h; sourceTree = "<group>"; };
 		277AB93E1CA30A3E008C01D6 /* LaserLibrary */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LaserLibrary; sourceTree = BUILT_PRODUCTS_DIR; };
 		277AB94C1CA30B12008C01D6 /* Connection_information.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Connection_information.cpp; path = ../../src/Connection_information.cpp; sourceTree = "<group>"; };
 		277AB94D1CA30B12008C01D6 /* Connection_information.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Connection_information.h; path = ../../src/Connection_information.h; sourceTree = "<group>"; };
@@ -75,8 +72,6 @@
 		277AB9401CA30A3E008C01D6 /* LaserLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				271DC6511CAC1AC1009624C6 /* DirectoryLister.cpp */,
-				271DC6521CAC1AC1009624C6 /* DirectoryLister.h */,
 				277AB94C1CA30B12008C01D6 /* Connection_information.cpp */,
 				277AB94D1CA30B12008C01D6 /* Connection_information.h */,
 				277AB94E1CA30B12008C01D6 /* distance.cpp */,
@@ -147,7 +142,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				271DC6531CAC1AC1009624C6 /* DirectoryLister.cpp in Sources */,
 				277AB9501CA30B12008C01D6 /* distance.cpp in Sources */,
 				277AB94F1CA30B12008C01D6 /* Connection_information.cpp in Sources */,
 				277AB95C1CA3214A008C01D6 /* LaserManager.cpp in Sources */,
