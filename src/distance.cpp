@@ -81,7 +81,8 @@ int main(int argc, char *argv[])
     
     while(1){
         glutCheckLoop(); //for Mac distribution.
-        LaserManager::readLaser();
+        PlanePoint p = LaserManager::readLaser();
+        //TODO do something with p.
     }
    
     

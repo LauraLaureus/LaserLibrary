@@ -9,7 +9,7 @@
 #include "LaserManager.hpp"
 
 char* fake[1];
-int LaserManager::vertex[4];
+int LaserManager::vertex[3];
 qrk::Connection_information LaserManager::information(1, fake);
 qrk::Urg_driver LaserManager::urg;
 
@@ -28,13 +28,16 @@ void LaserManager::open(){
     
 }
 
-void LaserManager::setWorkSpaceVertex(int rightDown, int rightUp, int leftUp, int leftDown){
-    LaserManager::vertex[0] =rightDown;
-    LaserManager::vertex[1] = rightUp;
-    LaserManager::vertex[2] = leftUp;
-    LaserManager::vertex[3] = leftDown;
+void LaserManager::setWorkSpaceVertex(int right, int height, int left){
+    LaserManager::vertex[0] =right;
+    LaserManager::vertex[1] = height;
+    LaserManager::vertex[2] = left;
+  
 }
 
+
+//TODO calculate centroide
+//TODO calculate x and y values for every point in data.
 PlanePoint LaserManager::readLaser(){
     std::vector<long> data;
     long time_stamp = 0;
@@ -45,3 +48,4 @@ PlanePoint LaserManager::readLaser(){
     }
     return *new PlanePoint(0,0);
 }
+
