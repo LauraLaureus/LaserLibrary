@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2754A3821CE07B7500B6CA02 /* view.c in Sources */ = {isa = PBXBuildFile; fileRef = 2754A3801CE07B7500B6CA02 /* view.c */; };
+		2754A3841CE07BCE00B6CA02 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2754A3831CE07BCE00B6CA02 /* GLUT.framework */; };
+		2754A3861CE07BDA00B6CA02 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2754A3851CE07BDA00B6CA02 /* OpenGL.framework */; };
 		277AB94F1CA30B12008C01D6 /* Connection_information.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 277AB94C1CA30B12008C01D6 /* Connection_information.cpp */; };
 		277AB9501CA30B12008C01D6 /* distance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 277AB94E1CA30B12008C01D6 /* distance.cpp */; };
 		277AB9591CA318AE008C01D6 /* lurg_cpp.so in Frameworks */ = {isa = PBXBuildFile; fileRef = 277AB9581CA318AE008C01D6 /* lurg_cpp.so */; };
@@ -26,6 +29,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2754A3801CE07B7500B6CA02 /* view.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = view.c; sourceTree = "<group>"; };
+		2754A3811CE07B7500B6CA02 /* view.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = view.h; sourceTree = "<group>"; };
+		2754A3831CE07BCE00B6CA02 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		2754A3851CE07BDA00B6CA02 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		277AB93E1CA30A3E008C01D6 /* LaserLibrary */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LaserLibrary; sourceTree = BUILT_PRODUCTS_DIR; };
 		277AB94C1CA30B12008C01D6 /* Connection_information.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Connection_information.cpp; path = ../../src/Connection_information.cpp; sourceTree = "<group>"; };
 		277AB94D1CA30B12008C01D6 /* Connection_information.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Connection_information.h; path = ../../src/Connection_information.h; sourceTree = "<group>"; };
@@ -45,6 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2754A3861CE07BDA00B6CA02 /* OpenGL.framework in Frameworks */,
+				2754A3841CE07BCE00B6CA02 /* GLUT.framework in Frameworks */,
 				277AB9591CA318AE008C01D6 /* lurg_cpp.so in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,6 +64,8 @@
 		277AB9351CA30A3E008C01D6 = {
 			isa = PBXGroup;
 			children = (
+				2754A3851CE07BDA00B6CA02 /* OpenGL.framework */,
+				2754A3831CE07BCE00B6CA02 /* GLUT.framework */,
 				277AB9581CA318AE008C01D6 /* lurg_cpp.so */,
 				277AB9401CA30A3E008C01D6 /* LaserLibrary */,
 				277AB93F1CA30A3E008C01D6 /* Products */,
@@ -82,6 +93,8 @@
 				277AB9511CA30B2A008C01D6 /* Urg_driver.h */,
 				277AB95A1CA3214A008C01D6 /* LaserManager.cpp */,
 				277AB95B1CA3214A008C01D6 /* LaserManager.hpp */,
+				2754A3801CE07B7500B6CA02 /* view.c */,
+				2754A3811CE07B7500B6CA02 /* view.h */,
 			);
 			path = LaserLibrary;
 			sourceTree = "<group>";
@@ -144,6 +157,7 @@
 			files = (
 				277AB9501CA30B12008C01D6 /* distance.cpp in Sources */,
 				277AB94F1CA30B12008C01D6 /* Connection_information.cpp in Sources */,
+				2754A3821CE07B7500B6CA02 /* view.c in Sources */,
 				277AB95C1CA3214A008C01D6 /* LaserManager.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

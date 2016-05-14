@@ -10,7 +10,7 @@
 #include "detect_os.h"
 #include <string>
 #include <cstring>
-#include "DirectoryLister.h"
+
 
 using namespace std;
 using namespace qrk;

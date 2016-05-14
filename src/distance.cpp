@@ -35,6 +35,9 @@ namespace
 void Display();
 void Init();
 
+void Display(){}
+void Init(){}
+
 int main(int argc, char *argv[])
 {
     // Conectar al sensor
@@ -73,15 +76,15 @@ int main(int argc, char *argv[])
     glutInitWindowPosition(100, 100);
     glutInitWindowSize(500, 500);
     glutInitDisplayMode(GLUT_RGBA | GLUT_SINGLE);
-    
-    glutCreateWindow("OpenGL Practica ");
     Init();
+    glutCreateWindow("OpenGL Practica ");
+    
     glutDisplayFunc(Display); // registra la funcion de rendering
     LaserManager::open();
     
     while(1){
         glutCheckLoop(); //for Mac distribution.
-        PlanePoint p = LaserManager::readLaser();
+        //PlanePoint p = LaserManager::readLaser();
         //TODO do something with p.
     }
    
