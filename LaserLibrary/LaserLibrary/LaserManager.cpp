@@ -28,7 +28,7 @@ void LaserManager::open(){
     
 }
 
-void LaserManager::setWorkSpaceVertex(int right, int height, int left){
+void LaserManager::setWorkSpaceVertex(long right, long height, long left){
     LaserManager::vertex[0] =right;
     LaserManager::vertex[1] = height;
     LaserManager::vertex[2] = left;
@@ -36,7 +36,7 @@ void LaserManager::setWorkSpaceVertex(int right, int height, int left){
 }
 
 
-//TODO calculate centroide
+//TODO calculate min
 //TODO calculate x and y values for every point in data.
 PlanePoint LaserManager::readLaser(){
     std::vector<long> data;

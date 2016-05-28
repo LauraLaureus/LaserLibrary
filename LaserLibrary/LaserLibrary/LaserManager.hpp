@@ -27,20 +27,18 @@ public:
 };
 
 
-
-
 class LaserManager{
     static qrk::Connection_information information;
-    static int vertex [3];
+    
     static qrk::Urg_driver urg;
     
 public:
     
     
     LaserManager(int argc, char** argv);
-    
+    static int vertex [3];
     static void open();
-    static void setWorkSpaceVertex(int right,int height,int left);
+    static void setWorkSpaceVertex(long right,long height,long left);
     static PlanePoint readLaser();
     
 };

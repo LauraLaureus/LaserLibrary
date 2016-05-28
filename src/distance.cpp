@@ -1,9 +1,9 @@
-/*#include "Urg_driver.h"
+#include "Urg_driver.h"
 #include "Connection_information.h"
 #include "math_utilities.h"
-#include <iostream>*/
+#include <iostream>
 
-/*using namespace qrk;
+using namespace qrk;
 using namespace std;
 
 namespace
@@ -26,11 +26,11 @@ namespace
         cout << endl;
     }
 }
-*/
 
-#include "LaserManager.hpp"
+
+/*#include "LaserManager.hpp"
 #include <GLUT/GLUT.h>
-#include <OpenGL/OpenGL.h>
+#include <OpenGL/OpenGL.h>*/
 
 void Display();
 void Init();
@@ -41,7 +41,7 @@ void Init(){}
 int main(int argc, char *argv[])
 {
     // Conectar al sensor
-    /*Connection_information information(argc, argv);
+    Connection_information information(argc, argv);
     Urg_driver urg;
 
     if (!urg.open(information.device_or_ip_name(),
@@ -70,15 +70,13 @@ int main(int argc, char *argv[])
         }
 
         print_data(urg, data, time_stamp);
-    }*/
+    }
    
-    glutInit(&argc, argv);
+    /*glutInit(&argc, argv);
     glutInitWindowPosition(100, 100);
     glutInitWindowSize(500, 500);
-    glutInitDisplayMode(GLUT_RGBA | GLUT_SINGLE);
+    glutInitDisplayMode(GLUT_RGBA | GLUT_SINGLE );
     Init();
-    glutCreateWindow("OpenGL Practica ");
-    
     glutDisplayFunc(Display); // registra la funcion de rendering
     LaserManager::open();
     
@@ -86,7 +84,7 @@ int main(int argc, char *argv[])
         glutCheckLoop(); //for Mac distribution.
         //PlanePoint p = LaserManager::readLaser();
         //TODO do something with p.
-    }
+    }*/
    
     
 
